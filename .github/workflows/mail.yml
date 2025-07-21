@@ -2,7 +2,7 @@ on: push
 name: Deploy website on push
 jobs:
   web-deploy:
-  name: deploy
+  name: Deploy
   runs-on: ubuntu-latest
   steps:
   - name: Get lates code
@@ -14,5 +14,5 @@ jobs:
       server: shimacitraselaras.co.id
       username: ${{ secrets.FTPUSERNAME }}
       password: ${{ secrets.FTPPASSWORD }}
-      protocol: ftps
+      protocol: ftp
       server-dir: public_html/wmanalys.shimacitraselaras.co.id/

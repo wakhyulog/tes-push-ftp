@@ -11,8 +11,8 @@ jobs:
   - name: Sync files
     uses: SamKirkland/FTP-Deploy-Action@4.3.4
     with:
-      server: grh44.myukcloud.com
+      server: shimacitraselaras.co.id
       username: ${{ secrets.FTPUSERNAME }}
       password: ${{ secrets.FTPPASSWORD }}
       protocol: ftps
-      server-dir: public-html/test-push-ftp/
+      server-dir: public_html/wmanalys.shimacitraselaras.co.id/
